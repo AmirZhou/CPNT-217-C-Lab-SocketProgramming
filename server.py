@@ -10,7 +10,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # # IPv6 socket method 3:
 # s3 = socket.create_server(("www.amirzhou.io",9999), family=socket.AF_INET6, dualstack_ipv6=True)
 
-addr = (socket.gethostname('localhost'))
+addr = (socket.gethostbyname('localhost'))
 
 s.bind((addr, port))
 
